@@ -606,7 +606,6 @@ body {
     margin-bottom: 20px;
     text-align: center;
     color: black;
-    width: 200px;
     height: 50px;
     border: none;
     border-bottom: 1px solid black;
@@ -615,7 +614,9 @@ body {
   }
   .email__form button {
     border: 1px solid black;
+    font-weight: 600;
     border-radius: 10px;
+    width: 100px;
   }
 }
 .footer__block {
