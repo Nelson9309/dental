@@ -71,14 +71,15 @@ body {
 .header_list li a {
   transition: all 0.2s ease;
 }
-.header_list li a:hover {
-  color: #63b322;
-}
 
 .header_link {
   color: #000;
   text-transform: uppercase;
   font-size: 16px;
+  padding: 5px 20px;
+}
+.header_link:hover {
+  color: #63b322;
 }
 
 @media screen and (max-width: 767px) {
@@ -170,9 +171,6 @@ body {
     margin: 0 60px 10px 0;
     text-align: end;
   }
-  .header_list li:before {
-    content: url(../img/sl-arrow_r.svg);
-  }
 
   .header_link {
     font-size: 24px;
@@ -195,6 +193,10 @@ body {
 
 .contacts__item {
   display: flex;
+}
+.contacts__item a {
+  color: black;
+  border-bottom: 1px solid #000;
 }
 
 .opening__p {
@@ -263,27 +265,18 @@ body {
   align-items: flex-start;
 }
 
-/* Слайд */
-/* Слайд активный */
-/* Слайд основной */
-/* Слайд по центру */
-/* Стрелка */
 .slick-arrow {
   border: 0;
 }
 
-/* Стрелка влево */
 .slick-arrow.slick-prev {
   border: 0;
 }
 
-/* Стрелка вправо */
 .slick-arrow.slick-next {
   border: 0;
 }
 
-/* Стрелка не активная */
-/* Точки */
 .slick-dots {
   border: 0;
 }
@@ -296,7 +289,6 @@ body {
   border: 0;
 }
 
-/* Конкретный слайдер */
 .slider {
   position: relative;
 }
@@ -502,9 +494,6 @@ body {
 
 .table_price {
   border-collapse: collapse;
-  border-left: 3px solid #63b322;
-  border-right: 3px solid #63b322;
-  border-bottom: 3px solid #63b322;
   margin-top: 10px;
 }
 
@@ -537,20 +526,6 @@ body {
   text-align: center;
 }
 
-.table_price a {
-  display: inline-block;
-  padding: 5px 10px;
-  background: #63b322;
-  box-shadow: 2px 2px 0 0 #2a4d0e;
-  position: relative;
-}
-
-.table_price a:hover {
-  box-shadow: none;
-  top: 2px;
-  left: 2px;
-}
-
 .email__block {
   display: flex;
   align-items: center;
@@ -563,6 +538,10 @@ body {
 .email__text {
   width: 500px;
 }
+.email__text p {
+  margin-top: 10px;
+  font-size: 14px;
+}
 
 .email__form input, .email__form button {
   text-align: center;
@@ -573,6 +552,9 @@ body {
   border-bottom: 1px solid black;
   background-color: transparent;
   margin-left: 20px;
+}
+.email__form input {
+  color: black;
 }
 .email__form button {
   border: 1px solid black;
